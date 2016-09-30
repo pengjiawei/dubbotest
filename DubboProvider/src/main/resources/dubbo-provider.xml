@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+     <!--关于配置文件的详细介绍，URL = "http://dubbo.io/User+Guide-zh.htm#UserGuide-zh-%3Cdubbo%3Aservice%2F%3E"-->
+    <dubbo:application name="dubbo-test"/>
+    <dubbo:registry protocol="zookeeper" address="192.168.88.137:8872"/>
+    <dubbo:protocol name="dubbo" port="20881"/>
+     <!--将service暴露出去，注册的时候使用的是MyFirstServiceImpl-->
+    <bean id="MyFirstService" class="com.iflyvoice.provider.MyFirstServiceImpl"/>
+    <dubbo:service interface="com.iflyvoice.service.MyFirstService" ref="MyFirstService"/>
+
+
+</beans>
