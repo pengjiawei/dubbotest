@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="307fde6d-0c9e-4f26-ae50-c74b9d741eea" name="Default" comment="">
-      <change type="DELETED" beforePath="F:\IDEAworkspace\dubbotest\testbranch.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DubboConsumer/src/main/resources/dubbo-consumer.xml" afterPath="$PROJECT_DIR$/DubboConsumer/src/main/resources/dubbo-consumer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DubboProvider/src/main/resources/dubbo-provider.xml" afterPath="$PROJECT_DIR$/DubboProvider/src/main/resources/dubbo-provider.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="307fde6d-0c9e-4f26-ae50-c74b9d741eea" name="Default" comment="" />
     <ignored path="dubbotest.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
