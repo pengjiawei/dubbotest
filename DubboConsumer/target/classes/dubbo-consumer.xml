@@ -17,6 +17,8 @@
     <dubbo:application name="dubbo-consumer"/>
     <dubbo:registry protocol="zookeeper" address="192.168.88.137:8872"/>
         <!--可以像本地bean一样使用MyFirstSerivce-->
-    <dubbo:reference id="MyFirstService" interface="com.iflyvoice.service.MyFirstService"/>
+    <dubbo:reference id="MyFirstService" interface="com.iflyvoice.service.MyFirstService" version="1.0" group="1">
+         <dubbo:method name="sayHello" timeout="1000" actives="10" />
+    </dubbo:reference>
 
 </beans>
