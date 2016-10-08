@@ -7,13 +7,14 @@
        http://code.alibabatech.com/schema/dubbo
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
      <!--关于配置文件的详细介绍，URL = "http://dubbo.io/User+Guide-zh.htm#UserGuide-zh-%3Cdubbo%3Aservice%2F%3E"-->
-     <!--配置version，超时timeout，容错failover,负载均衡，并发,retry,分组-->
+     <!--名字是一个代号，在minotor中看到-->
     <dubbo:application name="dubbo-testbypjw"/>
     <dubbo:registry protocol="zookeeper" address="192.168.88.137:8872"/>
     <!--这个端口号不能重复，每个服务接口占用一个-->
     <dubbo:protocol name="dubbo" port="20881"/>
      <!--将service暴露出去，注册的时候使用的是MyFirstServiceImpl.-->
     <bean id="MyFirstService" class="com.iflyvoice.provider.MyFirstServiceImpl"/>
+    <!--配置version，超时timeout，容错failover,负载均衡，并发,retry,分组-->
     <dubbo:service interface="com.iflyvoice.service.MyFirstService" ref="MyFirstService" version = "1.0" timeout="1000" cluster="failsafe" loadbalance="roundrobin" executes="3" retries="2" group="1"/>
 
 
