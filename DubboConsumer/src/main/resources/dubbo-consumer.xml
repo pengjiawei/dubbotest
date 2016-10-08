@@ -19,7 +19,7 @@
         <!--可以像本地bean一样使用MyFirstSerivce-->
         <!--provider和consumer中的group和version要设置为相同-->
     <dubbo:reference id="MyFirstService" interface="com.iflyvoice.service.MyFirstService" version="1.0" group="1">
-         <dubbo:method name="sayHello" timeout="1000" actives="3" />
+         <dubbo:method name="sayHello" timeout="1000" actives="2" />
     </dubbo:reference>
 
 </beans>
